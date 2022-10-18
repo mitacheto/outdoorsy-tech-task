@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function VehiclesComponent({ fetchedData, imagesData }) {
+export default function VehiclesComponent({ fetchedData }) {
     return (
         <div className='results'>
             {fetchedData &&
