@@ -13,7 +13,7 @@ function App() {
         if (filterKeywordValue !== '') {
             url = `https://search.outdoorsy.com/rentals?filter[keywords]=${filterKeywordValue}&page[limit]=${filterPagesValue}`;
         } else {
-            url = 'https://search.outdoorsy.com/rentals?page[limit]=10';
+            url = `https://search.outdoorsy.com/rentals?page[limit]=${filterPagesValue}`;
         }
 
         fetch(url)
